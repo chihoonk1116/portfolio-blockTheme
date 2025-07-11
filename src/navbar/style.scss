@@ -1,0 +1,97 @@
+@mixin respond($breakpoint){
+	@if $breakpoint == sm{
+		@media (max-width: 576px) {@content;}
+	}
+	@else if $breakpoint == md{
+		@media (max-width: 768px) {@content;}
+	}
+	@else if $breakpoint == lg{
+		@media (max-width: 992px) {@content;}
+	}
+}
+
+
+.wp-custom--nav {
+
+	&-container{
+		background-color: rgba(255, 255, 255, 0.05);
+	}
+
+	&-wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: var(--standard-max-width);
+
+		margin: 0 auto;
+		padding: 0 1rem;
+		box-sizing: border-box;
+	}
+
+	&-title-wrapper{
+		flex: 1;
+	}
+
+	&-title{
+		color: #FFF;
+  	text-transform: uppercase;
+	}
+	
+	&-ul{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		margin: 0;
+
+	}
+
+	&-link{
+		display: inline-block;
+		color: #FFF;
+  	text-transform: uppercase;
+		transition: all 0.2s ease-in-out;
+		padding: 1.5rem;
+	}
+
+	&-button{
+		display: none;
+		border: none;
+
+		background-color: transparent;
+		color: white;
+
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		@include respond(lg){
+			display: inline-block;
+		}
+	}
+
+	&-link:hover,
+	&-button:hover{
+		background-color: rgba(255, 255, 255, 0.7);
+		color: var(--color-primary);
+	}
+
+}
+
+#custom-desktop-nav{
+
+	display: block;
+
+	@include respond(lg){
+		display: none;
+	}
+}
+
+#custom-mobile-nav{
+
+	display: none;
+
+	@include respond(lg){
+		display: block;
+	}
+}
+

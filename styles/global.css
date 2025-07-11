@@ -1,0 +1,89 @@
+:root{
+  --font-primary: 'Arial', sans-serif;
+  --font-secondary: 'Helvetica Neue', sans-serif; 
+
+  --standard-max-width: 1280px;
+
+  --h1-font-size: 2.5rem;   /* 예: 40px (16px * 2.5) */
+  --h2-font-size: 2rem;     /* 예: 32px */
+  --h3-font-size: 1.75rem;  /* 예: 28px */
+  --h4-font-size: 1.5rem;   /* 예: 24px */
+  --h5-font-size: 1.25rem;  /* 예: 20px */
+
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 600;
+  --h4-font-weight: 600;
+  --h5-font-weight: 500;
+
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.3;
+  --h3-line-height: 1.4;
+  --h4-line-height: 1.5;
+  --h5-line-height: 1.6;
+
+  --p-font-size: 1rem;      
+  --p-font-weight: 400;     
+  --p-line-height: 1.7;      
+  --p-margin-bottom: 0.5rem;
+
+  --spacing-lg : 1.2rem;
+  --spacing-md : 1rem;
+  --spacing-sm : 0.7rem;
+
+  --color-primary: #030412;
+  --color-midnight: #06091f;
+  --color-navy: #161a31;
+  --color-indigo: #1f1e39;
+  --color-storm: #282b4b;
+  --color-aqua: #33c2cc;
+  --color-mint: #57db96;
+  --color-royal: #5c33cc;
+  --color-lavender: #7a57db;
+  --color-fuchsia: #ca2f8c;
+  --color-orange: #cc6033;
+  --color-sand: #d6995c;
+  --color-coral: #ea4884;
+
+}
+
+body {
+  background: var(--color-primary);
+  font-family: "Funnel Display", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+} 
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none !important;
+}
+
+
+.theme-bg--light {
+  --background-color: #ffffff;
+  background-color: var(--background-color);
+}
+
+.theme-bg--dark {
+  --background-color: #030412;
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+.placeholder-block{
+  width: 100%;
+  padding: 2rem;
+  background-color: var(--color-navy);
+  color: #FFF;
+  text-align: center;
+}
+
+.wp-custom--section{
+
+}

@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "customblocks/navbar",
+	"version": "0.1.0",
+	"title": "Navbar",
+	"category": "widgets",
+	"attributes": {
+		"size" : {"type": "string", "default": "large"},
+    "words": {
+      "type": "array",
+      "default": ["Hello", "World"]
+    }
+  },
+	"icon": "menu",
+	"description": "Navbar",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "navbar",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

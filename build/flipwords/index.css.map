@@ -1,0 +1,1 @@
+{"version":3,"file":"flipwords/index.css","mappings":";;;AACA;EACC;EACA;AAAD,C","sources":["webpack://myheader/./src/flipwords/editor.scss"],"sourcesContent":["\n.hero-section{\n\tpadding: 2rem;\n\tbackground-color: aqua;\n}"],"names":[],"sourceRoot":""}
