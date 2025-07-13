@@ -30,8 +30,8 @@ export const Navbar = () => {
       height: 'auto',
       y: 0,
       transition: {
-        height: { duration: 0.3 },
-        opacity: { duration: 0.2, delay: delayValue }
+        height: { duration: 0.2 },
+        opacity: { duration: 0.1, delay: delayValue }
       }
     }),
     closed: (delayValue) => ({
@@ -39,8 +39,8 @@ export const Navbar = () => {
       height: 0,
       y: -20,
       transition: {
-        opacity: { duration: 0.2 },
-        height: { duration: 0.3, delay: delayValue }
+        opacity: { duration: 0.1 },
+        height: { duration: 0.2, delay: delayValue }
       }
     })
 };
@@ -51,12 +51,14 @@ export const Navbar = () => {
         <div className="wp-custom--nav-title-wrapper">
           <p className="wp-custom--nav-title" href="">Chihoon Kim</p>
         </div>
-        <button 
+        <div
           onClick={() => setIsOpen(!isOpen)}
-          className="custom-button wp-custom--nav-button"
+          className={`wp-custom--nav-button ${isOpen ? "active" : ''}`}
         >
-            click
-        </button>
+          <div className="bar"/>
+          <div className="bar"/>
+          <div className="bar"/>
+        </div>
         <nav id="custom-desktop-nav">
           <NavigationMenu />
         </nav>
@@ -65,7 +67,7 @@ export const Navbar = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            custom={0.3}
+            custom={0.2}
             variants={variants}
             initial="closed"
             animate="open"

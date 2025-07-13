@@ -13,6 +13,7 @@ add_action('enqueue_block_assets', function(){
 function block_init(){
   register_block_type(__DIR__ . '/build/navbar');
   register_block_type(__DIR__ . '/build/flipwords');
+  register_block_type(__DIR__ . '/build/hero');
 }
 
 add_action('init', 'block_init');

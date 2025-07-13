@@ -15691,10 +15691,10 @@ const Navbar = () => {
       y: 0,
       transition: {
         height: {
-          duration: 0.3
+          duration: 0.2
         },
         opacity: {
-          duration: 0.2,
+          duration: 0.1,
           delay: delayValue
         }
       }
@@ -15705,10 +15705,10 @@ const Navbar = () => {
       y: -20,
       transition: {
         opacity: {
-          duration: 0.2
+          duration: 0.1
         },
         height: {
-          duration: 0.3,
+          duration: 0.2,
           delay: delayValue
         }
       }
@@ -15725,17 +15725,23 @@ const Navbar = () => {
           href: "",
           children: "Chihoon Kim"
         })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("button", {
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsxs)("div", {
         onClick: () => setIsOpen(!isOpen),
-        className: "custom-button wp-custom--nav-button",
-        children: "click"
+        className: `wp-custom--nav-button ${isOpen ? "active" : ''}`,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "bar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "bar"
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+          className: "bar"
+        })]
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("nav", {
         id: "custom-desktop-nav",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(NavigationMenu, {})
       })]
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(motion_react__WEBPACK_IMPORTED_MODULE_2__.AnimatePresence, {
       children: isOpen && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(motion_react__WEBPACK_IMPORTED_MODULE_3__.motion.div, {
-        custom: 0.3,
+        custom: 0.2,
         variants: variants,
         initial: "closed",
         animate: "open",
