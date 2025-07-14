@@ -7,4 +7,22 @@
   margin: 1rem 0;
 }
 
+.large {
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+}
+
+.medium {
+  font-size: var(--h3-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+}
+
+.small {
+  font-size: var(--h5-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+}
+
 /*# sourceMappingURL=style-index.css.map*/

@@ -1,18 +1,3 @@
-// import { createElement } from "@wordpress/element";
-// import ReactDOM from "react-dom";
-// import {FlipWords} from "./components/FlipWords";
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   document.querySelectorAll('[id^="flipwords-"]').forEach((container) => {
-//     const words = JSON.parse(container.dataset.words);
-//     ReactDOM.hydrate(
-//       createElement(FlipWords, { words }),
-//       container
-//     );
-//   });
-// });
-
-
 import { createElement } from "@wordpress/element"
 import ReactDOM from "react-dom"
 import React from "react"

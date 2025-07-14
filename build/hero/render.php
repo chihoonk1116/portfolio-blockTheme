@@ -1,1 +1,1 @@
-<h1>hello from render php</h1>
+<section class="wp-custom-section" id="hero-root"></section>

@@ -15864,20 +15864,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_FlipWords__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/FlipWords */ "./src/flipwords/components/FlipWords.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "react/jsx-runtime");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__);
-// import { createElement } from "@wordpress/element";
-// import ReactDOM from "react-dom";
-// import {FlipWords} from "./components/FlipWords";
-
-// document.addEventListener("DOMContentLoaded", () => {
-//   document.querySelectorAll('[id^="flipwords-"]').forEach((container) => {
-//     const words = JSON.parse(container.dataset.words);
-//     ReactDOM.hydrate(
-//       createElement(FlipWords, { words }),
-//       container
-//     );
-//   });
-// });
-
 
 
 
