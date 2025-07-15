@@ -2,7 +2,7 @@
   --font-primary: 'Arial', sans-serif;
   --font-secondary: 'Helvetica Neue', sans-serif; 
 
-  --standard-max-width: 1280px;
+  --standard-max-width: 2000px;
 
   --h1-font-size: 4rem; 
   --h2-font-size: 3rem;     
@@ -85,9 +85,10 @@ a{
 }
 
 .wp-custom-section{
+  height: 100vh;
   padding: 3rem 0;
   box-sizing: border-box;
-  margin: 2rem 0;
+  margin: 0;
 }
 
 .wp-custom-container{
@@ -103,5 +104,35 @@ a{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.custom-h1{
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+}
+
+.custom-h2{
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  line-height: var(--h2-line-height);
+}
+
+.custom-h3{
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  line-height: var(--h3-line-height);
+}
+
+.custom-h4{
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+  line-height: var(--h4-line-height);
+}
+
+.custom-h5{
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+  line-height: var(--h5-line-height);
 }
 
