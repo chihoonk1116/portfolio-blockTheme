@@ -114,5 +114,40 @@ return array(
 		'style' => 'file:./style-index.css',
 		'render' => 'file:./render.php',
 		'viewScript' => 'file:./view.js'
+	),
+	'skillset' => array(
+		'$schema' => 'https://schemas.wp.org/trunk/block.json',
+		'apiVersion' => 3,
+		'name' => 'customblocks/skillset',
+		'version' => '0.1.0',
+		'title' => 'Skill Set',
+		'category' => 'widgets',
+		'attributes' => array(
+			'size' => array(
+				'type' => 'string',
+				'default' => 'large'
+			),
+			'words' => array(
+				'type' => 'array',
+				'default' => array(
+					'Hello',
+					'World'
+				)
+			)
+		),
+		'icon' => 'smiley',
+		'description' => 'Hero section',
+		'example' => array(
+			
+		),
+		'supports' => array(
+			'html' => false
+		),
+		'textdomain' => 'skillset',
+		'editorScript' => 'file:./index.js',
+		'editorStyle' => 'file:./index.css',
+		'style' => 'file:./style-index.css',
+		'render' => 'file:./render.php',
+		'viewScript' => 'file:./view.js'
 	)
 );
