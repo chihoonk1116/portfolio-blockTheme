@@ -1,9 +1,9 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "customblocks/skillset",
+	"name": "customblocks/aboutme",
 	"version": "0.1.0",
-	"title": "Skill Set",
+	"title": "About Me",
 	"category": "widgets",
 	"attributes": {
 		"size" : {"type": "string", "default": "large"},
@@ -18,7 +18,7 @@
 	"supports": {
 		"html": false
 	},
-	"textdomain": "skillset",
+	"textdomain": "aboutme",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

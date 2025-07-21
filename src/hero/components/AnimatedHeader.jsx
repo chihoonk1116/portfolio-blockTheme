@@ -1,32 +1,49 @@
-import React from 'react'
-import { motion } from 'motion/react'
+import React, {useRef} from 'react'
+import {useGSAP} from "@gsap/react"
+import gsap from "gsap"
+
 
 const AnimatedHeader = () => {
 
   // use gsap to control animation delicatetly
+  const contextRef = useRef(null)
+  const headerRef = useRef(null)
+
+  useGSAP(() => {
+    const tl = gsap.timeline()
+
+    tl.from(contextRef.current, {
+      y: "50vh",
+      duration: 1,
+      ease: "circ.out"
+    })
+
+    tl.from(headerRef.current, {
+      opacity: 0,
+      y: "250",
+      duration: 1,
+      ease: "circ.out"
+    }, "<+0.5")
+  })
+
 
   return (
-    <div
-      initial={{ y: 20}}
-      animate={{ y : 0}}
-      transition={{duration: 1, ease: "easeInOut"}}
-      className="animated-header_container">
-      <h4 className='header_subtitle'>Subtitle</h4>
-      <div className="header_main-wrapper">
-        <h1 
-          initial={{ clipPath:  "polygon(0 100%, 100% 100%, 100% 100%, 0% 100%)" }}
-          animate={{ clipPath: "polygon(0 0%, 100% 0%, 100% 100%, 0% 100%)"  }}
-          transition={{ duration: 1, ease: "circOut" }}
-          className='header_title custom-h1'>
-          Chihoon Kim
-        </h1>
-        <div className='header_title_br' />
+    <div ref={contextRef} className="animated-header_container">
+      <div style={{clipPath: "polygon(0 0, 100% 0%, 100% 100%, 0% 100%)"}} >
+        <div ref={headerRef} className="">
+          <p className='animated-header_subtitle'>Subtitle</p>
+          <div className='animated-header_title_wrapper'>
+            <h1 className="animated-header_title">Chihoon Kim</h1>
+          </div>
+        </div>
       </div>
-      {/* <div className="header_description">
-        <span className="header_description-item custom-h5">Lorem ipsum dolor sit amet.</span>
-        <span className="header_description-item custom-h5">Lorem ipsum dolor sit amet.</span>
-        <span className="header_description-item custom-h5">Lorem ipsum dolor sit amet.</span>
-      </div> */}
+
+      <div className="animated-header_container-bottom">
+        <div className="animated-header_title_br" />
+        <span className='animated-header_description-item custom-h5'>Lorem ipsum dolor sit amet.</span>
+        <span className='animated-header_description-item custom-h5'>Lorem ipsum dolor sit amet.</span>
+        <span className='animated-header_description-item custom-h5'>Lorem ipsum dolor sit amet.</span>
+      </div>
     </div>
   )
 }

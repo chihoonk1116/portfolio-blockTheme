@@ -2,20 +2,20 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/skillset/block.json":
-/*!*********************************!*\
-  !*** ./src/skillset/block.json ***!
-  \*********************************/
+/***/ "./src/aboutme/block.json":
+/*!********************************!*\
+  !*** ./src/aboutme/block.json ***!
+  \********************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"customblocks/skillset","version":"0.1.0","title":"Skill Set","category":"widgets","attributes":{"size":{"type":"string","default":"large"},"words":{"type":"array","default":["Hello","World"]}},"icon":"smiley","description":"Hero section","example":{},"supports":{"html":false},"textdomain":"skillset","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"customblocks/aboutme","version":"0.1.0","title":"About Me","category":"widgets","attributes":{"size":{"type":"string","default":"large"},"words":{"type":"array","default":["Hello","World"]}},"icon":"smiley","description":"Hero section","example":{},"supports":{"html":false},"textdomain":"aboutme","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ }),
 
-/***/ "./src/skillset/edit.js":
-/*!******************************!*\
-  !*** ./src/skillset/edit.js ***!
-  \******************************/
+/***/ "./src/aboutme/edit.js":
+/*!*****************************!*\
+  !*** ./src/aboutme/edit.js ***!
+  \*****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -33,9 +33,9 @@ function Edit() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     ...blockProps,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
-      className: "placeholder-block skillset-block",
+      className: "placeholder-block aboutme-block",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("h1", {
-        children: "Skillset Placeholder"
+        children: "Aboutme Placeholder"
       })
     })
   });
@@ -43,18 +43,18 @@ function Edit() {
 
 /***/ }),
 
-/***/ "./src/skillset/index.js":
-/*!*******************************!*\
-  !*** ./src/skillset/index.js ***!
-  \*******************************/
+/***/ "./src/aboutme/index.js":
+/*!******************************!*\
+  !*** ./src/aboutme/index.js ***!
+  \******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
 /* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/skillset/style.scss");
-/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/skillset/edit.js");
-/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/skillset/block.json");
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.scss */ "./src/aboutme/style.scss");
+/* harmony import */ var _edit__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./edit */ "./src/aboutme/edit.js");
+/* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./block.json */ "./src/aboutme/block.json");
 
 
 
@@ -65,10 +65,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/skillset/style.scss":
-/*!*********************************!*\
-  !*** ./src/skillset/style.scss ***!
-  \*********************************/
+/***/ "./src/aboutme/style.scss":
+/*!********************************!*\
+  !*** ./src/aboutme/style.scss ***!
+  \********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -217,8 +217,8 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"skillset/index": 0,
-/******/ 			"skillset/style-index": 0
+/******/ 			"aboutme/index": 0,
+/******/ 			"aboutme/style-index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -268,7 +268,7 @@ module.exports = window["ReactJSXRuntime"];
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["skillset/style-index"], () => (__webpack_require__("./src/skillset/index.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["aboutme/style-index"], () => (__webpack_require__("./src/aboutme/index.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

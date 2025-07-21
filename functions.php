@@ -14,6 +14,7 @@ function block_init(){
   register_block_type(__DIR__ . '/build/navbar');
   register_block_type(__DIR__ . '/build/flipwords');
   register_block_type(__DIR__ . '/build/hero');
+  register_block_type(__DIR__ . '/build/aboutme');
 }
 
 add_action('init', 'block_init');

@@ -5,8 +5,8 @@ export default function Edit(){
 
 	return(
 		<div {...blockProps}>
-			<div className="placeholder-block skillset-block">
-				<h1>Skillset Placeholder</h1>
+			<div className="placeholder-block aboutme-block">
+				<h1>Aboutme Placeholder</h1>
 			</div>
 		</div>
 	)

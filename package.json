@@ -18,7 +18,11 @@
 		"@wordpress/scripts": "^30.19.0"
 	},
 	"dependencies": {
+		"@gsap/react": "^2.1.2",
+		"gsap": "^3.13.0",
 		"motion": "^12.23.3",
+		"react-icons": "^5.5.0",
+		"react-syntax-highlighter": "^15.6.1",
 		"tailwind-merge": "^3.3.1"
 	}
 }

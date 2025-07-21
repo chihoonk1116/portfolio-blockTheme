@@ -44,6 +44,7 @@
   --color-orange: #cc6033;
   --color-sand: #d6995c;
   --color-coral: #ea4884;
+  --color-grey: oklch(.705 .015 286.067);
 
 }
 
@@ -136,3 +137,7 @@ a{
   line-height: var(--h5-line-height);
 }
 
+.size-full{
+  width: 100%;
+  height: 100%;
+}
